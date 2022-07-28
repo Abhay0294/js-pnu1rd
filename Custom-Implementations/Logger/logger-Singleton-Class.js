@@ -1,5 +1,5 @@
 export default class Logger {
-  logs: any[];
+  logs;
   constructor() {
     this.logs = [];
   }

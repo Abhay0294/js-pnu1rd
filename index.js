@@ -7,4 +7,4 @@ const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1 align='center'>Come and Lets play with Singleton classes</h1>`;
 
 const x = new Logger();
-console.log(x);
+console.log('>>><<<<', x);

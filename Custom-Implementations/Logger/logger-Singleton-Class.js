@@ -3,10 +3,9 @@ export default class Logger {
   constructor() {
     this.logs = [];
   }
-  message_log(message) {
+  _log(message) {
     this.logs.push(message);
-    this.x;
+    return this.print_log();
   }
-
-  x = (() => console.log(this.logs))();
+  print_log = () => console.info('Logger>>', this.logs);
 }

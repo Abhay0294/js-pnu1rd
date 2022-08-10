@@ -1,16 +1,14 @@
 // Import stylesheets
 import './style';
-import Logger from './Custom-Implementations/Logger/logger-Singleton-Class';
+import logger from './Custom-Implementations/Logger/logger-Singleton-Class';
 import TestClass from './Test-Components/test-file';
+import TestClass2 from './Test-Components/test-file-2';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1 align='center'>Come and Lets play with Singleton classes</h1>`;
 
-const customConsole = new Logger();
-const testClassObject = new TestClass();
-
-customConsole._log('Hello');
-customConsole._log('Abhay');
-customConsole._log('Kuch bhi');
+const customConsole = new TestClass();
+const testClassObject = new TestClass2();
+customConsole.print();
 testClassObject.print();

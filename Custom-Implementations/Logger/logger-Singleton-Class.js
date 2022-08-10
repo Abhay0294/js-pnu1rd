@@ -1,11 +1,20 @@
-export default class Logger {
+class Logger {
   logs;
   constructor() {
-    this.logs = [];
+    if (Logger.instance == null) {
+      this.logs = [];
+      Logger.instance = this;
+    }
+    return Logger.instance;
   }
   _log(message) {
     this.logs.push(message);
-    return this.print_log();
+    console.info('Logger>>', this.logs);
+    this.print_log_count();
   }
-  print_log = () => console.info('Logger>>', this.logs);
+  print_log_count = () => console.info('Logger>>', this.logs.length);
 }
+
+logger = new Logger();
+Object.freeze(logger);
+export default logger;

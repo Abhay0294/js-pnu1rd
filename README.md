@@ -1,3 +1,3 @@
-# js-pnu1rd
+# JavaScript
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-pnu1rd)
+This repository deals in understanding JS core concepts

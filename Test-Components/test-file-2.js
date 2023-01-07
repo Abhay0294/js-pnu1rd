@@ -1,4 +1,4 @@
-import logger from './../Custom-Implementations/Logger/logger-Singleton-Class';
+import { logger } from './../Custom-Implementations/Logger/logger-Singleton-Class';
 
 export default class TestClass {
   print() {

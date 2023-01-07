@@ -15,6 +15,6 @@ class Logger {
   print_log_count = () => console.info('Logger>>', this.logs.length);
 }
 
-logger = new Logger();
+export const logger = new Logger();
 Object.freeze(logger);
 export default logger;
